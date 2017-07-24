@@ -17,6 +17,7 @@
 		DD0050781F1D46150058F59D /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0050771F1D46140058F59D /* Brain.swift */; };
 		DD00507A1F1D57D90058F59D /* GameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0050791F1D57D90058F59D /* GameTest.swift */; };
 		DD00507C1F1D58670058F59D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD00507B1F1D58670058F59D /* Game.swift */; };
+		DD761A5F1F23D7EF0086C339 /* ViewControllerUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD761A5E1F23D7EF0086C339 /* ViewControllerUnitTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DD0050771F1D46140058F59D /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		DD0050791F1D57D90058F59D /* GameTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTest.swift; sourceTree = "<group>"; };
 		DD00507B1F1D58670058F59D /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		DD761A5E1F23D7EF0086C339 /* ViewControllerUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerUnitTest.swift; path = FizzBuzzTests/ViewControllerUnitTest.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				DD00505E1F1D43E90058F59D /* Info.plist */,
+				DD761A5E1F23D7EF0086C339 /* ViewControllerUnitTest.swift */,
 				DD0050751F1D44A30058F59D /* BrainTest.swift */,
 				DD0050791F1D57D90058F59D /* GameTest.swift */,
 			);
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD0050761F1D44A30058F59D /* BrainTest.swift in Sources */,
+				DD761A5F1F23D7EF0086C339 /* ViewControllerUnitTest.swift in Sources */,
 				DD00507A1F1D57D90058F59D /* GameTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,12 +17,12 @@ class Game: NSObject {
         self.brain = Brain()
     }
     
-    func play(move: String) -> Bool {
+    func play(move: String) -> (right: Bool, score: Int) {
         let result = brain.check(number: score + 1)
         
         if result == move {
             self.score += 1
         }
-        return (result == move)
+        return ((result == move), score)
     }
 }

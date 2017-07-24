@@ -9,9 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var gameScore : Int?
+    
+    public var game : Game?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.game = Game()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,5 +26,14 @@ class ViewController: UIViewController {
     }
 
 
+    func play(move: String){
+        guard let unwrappedGame = game else {
+            print("Game id nil!")
+            return
+        }
+        
+        let response = unwrappedGame.play(move: move)
+        self.gameScore = response.score
+    }
 }
 

@@ -39,50 +39,50 @@ class GameTest: XCTestCase {
     func testIfMoveIsRight() {
         game.score = 2
         let result = game.play(move: "Fizz")
-        XCTAssertEqual(result, true)
+        XCTAssertEqual(result.right, true)
     }
     
     func testIFMoveIsWrong() {
         game.score = 1
         let result = game.play(move: "Fizz")
-        XCTAssertEqual(result, false)
+        XCTAssertEqual(result.right, false)
     }
     
     func testIfBuzzMoveIsRight() {
         game.score = 4
         let result = game.play(move: "Buzz")
-        XCTAssertEqual(result, true)
+        XCTAssertEqual(result.right, true)
     }
     
     func testIfBuzzMoveIsWrong() {
         game.score = 1
         let result = game.play(move: "Buzz")
-        XCTAssertEqual(result, false)
+        XCTAssertEqual(result.right, false)
     }
     
     func testIFFizzBuzzMoveIsRight() {
         game.score = 14
         let result = game.play(move: "FizzBuzz")
-        XCTAssertEqual(result, true)
+        XCTAssertEqual(result.right, true)
     }
     
     func testIfFizzBuzzIsWrong() {
         game.score = 1
         let result = game.play(move: "FizzBuzz")
-        XCTAssertEqual(result, false)
+        XCTAssertEqual(result.right, false)
         
     }
     
     func testIfNumerMoveIsRight() {
         game.score = 0
         let result = game.play(move: "1")
-        XCTAssertEqual(result, true)
+        XCTAssertEqual(result.right, true)
     }
     
     func testIfNumberMoveIsWrong(){
         game.score = 1
         let result = game.play(move: "1")
-        XCTAssertEqual(result, false)
+        XCTAssertEqual(result.right, false)
     }
     
     
@@ -92,5 +92,14 @@ class GameTest: XCTestCase {
         XCTAssertEqual(game.score, 1)
     }
 
+    func testPlayShouldReturnIfMoveRight() {
+        let response = game.play(move: "1")
+        XCTAssertNotNil(response.right)
+    }
+    
+    func testPlayShouldReturnNewScore(){
+        let response = game.play(move: "1")
+        XCTAssertNotNil(response.score)
+    }
     
 }

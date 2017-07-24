@@ -20,7 +20,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -29,8 +29,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2Y-vu-bFz">
-                                <rect key="frame" x="234" y="629" width="125" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2Y-vu-bFz">
+                                <rect key="frame" x="238" y="619" width="121" height="40"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="PLAY AGAIN">
                                     <color key="titleColor" red="0.97254901960784312" green="0.95294117647058818" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,6 +89,7 @@
                                     <constraint firstItem="6je-ej-sbr" firstAttribute="top" secondItem="Upe-TO-2gE" secondAttribute="top" id="gnD-3A-F64"/>
                                     <constraint firstAttribute="trailing" secondItem="fjs-6G-bqY" secondAttribute="trailing" id="gpO-Jp-nlW"/>
                                     <constraint firstItem="6je-ej-sbr" firstAttribute="width" secondItem="jk4-Pd-nlw" secondAttribute="width" id="icl-29-sVZ"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jk4-Pd-nlw" secondAttribute="trailing" constant="20" symbolic="YES" id="r9x-CV-acD"/>
                                     <constraint firstAttribute="bottom" secondItem="fjs-6G-bqY" secondAttribute="bottom" id="tg5-52-qFH"/>
                                     <constraint firstAttribute="trailing" secondItem="6je-ej-sbr" secondAttribute="trailing" id="y3J-dM-XOg"/>
                                 </constraints>
@@ -96,6 +97,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.72156862745098038" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="N2Y-vu-bFz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Igm-g1-oqu"/>
                             <constraint firstAttribute="trailing" secondItem="N2Y-vu-bFz" secondAttribute="trailing" constant="16" id="UMe-zK-Zdr"/>
                             <constraint firstItem="Upe-TO-2gE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XzZ-ej-bdk"/>
                             <constraint firstItem="Upe-TO-2gE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="ey3-sR-kAd"/>
